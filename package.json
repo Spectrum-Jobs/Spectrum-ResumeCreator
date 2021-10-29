@@ -1,0 +1,29 @@
+{
+  "name": "spectrumbackend",
+  "version": "1.0.0",
+  "description": "Backend for Resume Creator",
+  "main": "server.js",
+  "scripts": {
+    "start": "node SpectrumBackend/server.js",
+    "dev": "nodemon  SpectrumBackend/server.js"
+  },
+  "author": "Spectrum",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1016.0",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "fast-two-sms": "^3.0.0",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^6.0.12",
+    "multer": "^1.4.3",
+    "multer-s3": "^2.10.0",
+    "nodemon": "^2.0.14",
+    "path": "^0.12.7",
+    "pdf-parse": "^1.1.1",
+    "pdfreader": "^1.2.12"
+  }
+}

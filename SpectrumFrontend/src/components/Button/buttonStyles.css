@@ -1,0 +1,14 @@
+.app-button {
+  background-color: rgb(8, 95, 247);
+  color: #fff;
+  font-weight: 600;
+  margin: 0.5rem;
+  padding: 0.6rem 1rem;
+  border: 1px solid;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.app-button:hover {
+  background: rgba(8, 95, 247, 0.9);
+}

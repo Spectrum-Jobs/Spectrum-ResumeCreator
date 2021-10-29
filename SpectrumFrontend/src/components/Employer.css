@@ -1,0 +1,188 @@
+/* ***************** employer profile ***************** */
+.signin {
+  padding: 0.5rem 0.8rem;
+  background-color: rgb(8, 95, 247);
+  color: rgb(255, 255, 255);
+  margin: 0.5rem;
+  padding: 0.6rem 1rem;
+  border: 1px solid;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.signin-link {
+  text-decoration: none;
+}
+
+.search-form-field {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.search-input {
+  padding: 0.5rem 0.8rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: 1px solid rgba(45, 45, 45, 0.4);
+}
+
+.employer-example {
+  width: 600px;
+  margin: 1rem auto;
+  border: 1px solid rgba(45, 45, 45, 0.4);
+}
+
+/* ************** employer profile ************** */
+.employer-main-section {
+  width: 50vw;
+  margin: 1rem auto;
+}
+
+.form-wrapper {
+  padding: 1.2rem;
+  border: 1px solid rgba(45, 45, 45, 0.4);
+}
+
+.employer-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.employer-detail-field,
+.employer-detail-fields-period {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.employer-input,
+.employer-detail-textarea,
+.employer-detail-input {
+  margin: 0 0.5rem;
+}
+
+/* ************* employer connect ***************** */
+.employer-connect-main-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filters {
+  width: 30vw;
+}
+
+.connect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.connect-heading {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.connect-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.connect-main-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0.8rem;
+}
+
+.connect-checkbox {
+  margin: 0.2rem;
+  width: 1rem;
+}
+
+.connect-candidate-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 0.5rem;
+  font-size: 14px;
+  /* width: 50%; */
+  border: 1px solid rgba(45, 45, 45, 1);
+}
+
+.connect-candidate-info-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.connect-candidate-info-text {
+  /* background-color: rgba(167, 164, 164, 0.4); */
+  padding: 0.1rem;
+  margin: 0.2rem;
+}
+
+.connect-candidate-info-bottom {
+  width: 70%;
+}
+
+.connect-bottom-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.connect-dn {
+  opacity: 0;
+}
+
+.filters {
+  text-align: left;
+}
+
+.filters h4 {
+  margin-left: 0.8rem;
+}
+
+.filter-by {
+  margin: 0.8rem;
+}
+
+.filter-by-content-display {
+  display: none;
+}
+
+.filter-by-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0.4rem;
+}
+
+.filter-by-content-active {
+  display: block;
+}
+
+.filter-by-text {
+  margin: 0.5rem 0;
+}
+
+.filter-by-checkbox {
+  margin-right: 0.8rem;
+}

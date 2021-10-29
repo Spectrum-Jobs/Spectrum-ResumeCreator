@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(250, 250, 250);
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ****************** index page ****************** */
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(37, 42, 43);
+}
+
+nav {
+  font-size: 13px;
+  color: #dcd2cc;
+  /* width: 40vw; */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.navbar li:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ede7dc;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: rgb(220, 210, 204);
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+}
+
+.employer,
+.job-seeker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+.employer {
+  background-color: #ede7dc;
+}
+
+.job-seeker {
+  background-color: #dcd2cc;
+}
+
+.employer a,
+.job-seeker a {
+  text-decoration: none;
+  color: rgba(45, 45, 45, 0.9);
+  transition: all 0.5s;
+}
+
+.main-heading {
+  display: inline-block;
+  /* background: blue url("https://picsum.photos/id/1015/200/300");
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; */
+}
+
+.employer a:hover,
+.job-seeker a:hover {
+  color: rgba(45, 45, 45, 1);
+  font-size: 2.5rem;
+}
+
+.link-tag {
+  text-decoration: none;
+  margin: 1rem;
+  font-weight: 600;
+  color: rgb(8, 95, 247);
+}
+
+.link-tag:hover {
+  color: rgba(8, 95, 247, 0.8);
+}
+
+/* ***************** registration ***************** */
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 0.9rem; */
+  margin: 4rem auto 1rem;
+  line-height: 1rem;
+}
+
+.form-1 {
+  margin: 1.5rem 0;
+}
+
+.hr-line-or {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+  margin: 1rem 0;
+}
+
+.hr-1 {
+  background-color: rgb(219, 219, 219);
+  width: 100px;
+  height: 1px;
+}
+
+.hr-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15px;
+}
+
+.form-2 {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.details-form {
+  width: 50%;
+}
+
+.form-info {
+  display: flex;
+  margin: 0.4rem auto;
+}
+
+.details-form-label {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+  /* text-align: right; */
+  font-size: 14px;
+  /* margin-right: 1rem; */
+  padding: 0 1rem;
+}
+
+.details-form-label::after {
+  content: " *";
+  color: red;
+  margin-left: 0.2rem;
+}
+
+.show-details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  line-height: 2rem;
+}
+
+.hr-line {
+  background-color: rgb(219, 219, 219);
+  width: 80%;
+  height: 1px;
+  margin: 0.5rem auto 1.5rem;
+}
+
+.about-education {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-del {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 10%;
+}
+
+.edit-font {
+  color: rgb(8, 95, 247);
+}
+
+.time-period {
+  flex-direction: column;
+}
+
+.time-period-label {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.details-form-checkbox {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin: 1rem auto;
+  width: 50%;
+}
+
+.skill-btn,
+.save-btn,
+.closeBtn {
+  background-color: rgb(8, 95, 247);
+  color: #fff;
+  font-weight: 600;
+  margin: 0 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.skill-btn:hover,
+.save-btn:hover {
+  background-color: rgba(8, 95, 247, 0.9);
+}
+
+.save-detail {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ******************add education pop up****************** */
+.edu-modal {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: #f4f4f4;
+  margin: 5% auto;
+  padding: 20px;
+  width: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(53, 6, 6, 0.17);
+  /* animation-name: modalOpen;
+  animation-duration: 0.6s; */
+}
+
+/* .closeBtn {
+  color: rgba(0, 0, 0, 0.8);
+  float: right;
+  font-size: 30px;
+} */
+
+.closeBtn:hover,
+.closeBtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-input-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1rem 0;
+}
+
+.add-edu-label {
+  padding: 0.5rem 0;
+}
+
+.modal-input {
+  padding: 0.4rem 1rem;
+  width: 40%;
+}
+
+.modal-checkbox {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* @keyframes modalOpen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */
+
+/* login form  */
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* register form  */
+.form-radio {
+  margin-right: 1rem;
+}
